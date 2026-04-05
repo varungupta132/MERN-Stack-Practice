@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .todo-box {
+            background: #fff;
+            width: 360px;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 18px;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background: #f3f4ff;
+            border-radius: 10px;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .empty {
+            text-align: center;
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="todo-box">
+    <h1>📝 My Todos</h1>
+
+    <% if (todos.length === 0) { %>
+        <p class="empty">No todos found</p>
+    <% } else { %>
+        <ul>
+            <% todos.forEach((todo, index) => { %>
+                <li><%= index + 1 %>. <%= todo %></li>
+            <% }) %>
+        </ul>
+    <% } %>
+</div>
+
+</body>
+</html>
