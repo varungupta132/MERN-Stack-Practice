@@ -1,0 +1,59 @@
+<html>
+<head>
+<title> normal form</title>
+<style>
+
+.divv{
+    border: 2px solid black;
+    width: 300px;
+    background-color: rgba(147, 64, 188, 0.6);
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.divv label{
+    font-size : 20px;
+}
+.bttn{
+    background-color :rgba(19, 131, 228, 0.645);
+    color : white;
+    padding:8px;
+    border:none; 
+    border-radius: 5px;
+
+
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    <form method = post  action = "/submit">
+        <div class = "divv">
+        <label for="name" >Name:</label>
+        <input type = "text" id = "name" name = "name"> <br>
+
+        <label for = "url" > Enter your URL here </label>
+        <input type = "text" id = "url" name = "url">
+
+        <button class = "bttn" type = "submit">Submit</button>
+        </div>
+</form>
+
+
+
+
+
+
+
+</body>
+</html>
