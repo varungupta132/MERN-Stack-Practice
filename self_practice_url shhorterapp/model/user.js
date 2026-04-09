@@ -2,7 +2,7 @@ const mongo = require("mongoose");
 
 mongo.connect("mongodb://localhost:27017/urls").then(
     console.log("db connected")
-);;
+);
 
 const schema = mongo.Schema({
     ourl : {
@@ -14,7 +14,7 @@ const schema = mongo.Schema({
         required : true
     }
 } , {
-    timestamp : true
+    timestamps : true
 }
 );
 

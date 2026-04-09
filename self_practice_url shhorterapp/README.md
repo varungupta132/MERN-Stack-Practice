@@ -2,6 +2,8 @@
 
 A simple URL shortener built with Node.js, Express, MongoDB, and EJS.
 
+# SERVER SIDE RENDERED (SSR)
+
 ## How It Works
 
 1. User submits a name and a long URL via the form
