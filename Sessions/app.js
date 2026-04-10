@@ -54,6 +54,8 @@ app.get("/logout", (req , res) =>{
 })
 
 // ----------------------UPDATE-------------------
+  
+
 
 app.post("/update" , (req , res) =>{
     // console.log(req.body);
